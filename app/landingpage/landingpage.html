@@ -1,0 +1,132 @@
+<main class="backgroundLanding" id="home">
+  <div class="titleBox container">
+    <div class="backgroundImage"></div>
+    <h1 class="initials"><span class="bracket">{</span> MV <span class="bracket">}</span></h1>
+    <div class="descriptionBox">
+      <p class="lines"></p>
+      <p class="description"><b>Full-Stack Developer</b></p>
+      <p class="lines"></p>
+    </div>
+    <div class="menuItems">
+      <p class="about">
+        <a class="aboutLink" href="#about" du-smooth-scroll>about</a>
+      </p>
+      <p class="resume">
+        resumé
+      </p>
+      <p class="portfolio" ui-sref="portfolio">
+        portfolio
+      </p>
+      <p class="contact" href="#contact" du-smooth-scroll>
+        contact
+      </p>
+    </div>
+  </div>
+</main>
+<!-- ////////////////////////////////////////////
+///////////// ABOUT PAGE //////////////////// -->
+
+<main class="aboutInfo" id="about">
+  <div class="aboutBox container">
+    <!-- ///////// About Page Menu /////////// -->
+    <div class="aboutPageDropdown">
+      <div class="about-page-menu">
+        <p class="aboutPageLink">
+          <span class="aboutPageBracketLink">{</span> MV <span class="aboutPageBracketLink">}</span>
+        </p>
+        <span class="aboutHamburger glyphicon glyphicon-menu-hamburger"></span>
+      </div>
+      <div class="about-dropdown-content">
+        <a href="#home" du-smooth-scroll>Home</a>
+        <a ui-sref="resume">Resumé</a>
+        <a ui-sref="portfolio">Portfolio</a>
+        <a href="#contact" du-smooth-scroll>Contact</a>
+      </div>
+    </div>
+    <!-- /////////// Photo and Description //////////// -->
+    <img class="myPhoto" src="images/Matthew Victor.jpg" />
+    <div class="aboutDescriptionBox">
+      <h3 class="aboutDescriptionHeader">About  Me...</h3>
+      <p class="aboutDescription">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <div class="coolDesign3">
+  </div>
+  <div class="coolDesign2">
+  </div>
+  <div class="coolDesign">
+  </div>
+</main>
+
+<!-- ////////////////////////////////////////////
+///////////// CONTACT PAGE //////////////////// -->
+
+<main class="contactInfo" id="contact">
+  <!-- ////////// Contact Menu /////////////// -->
+  <div class="contactMenuBox container col-xs-2">
+    <div class="aboutPageDropdown">
+      <div class="about-page-menu">
+        <p class="aboutPageLink">
+          <span class="aboutPageBracketLink">{</span> MV <span class="aboutPageBracketLink">}</span>
+        </p>
+        <span class="aboutHamburger glyphicon glyphicon-menu-hamburger"></span>
+      </div>
+      <div class="about-dropdown-content">
+        <a href="#home" du-smooth-scroll>Home</a>
+        <a ui-sref="resume">Resumé</a>
+        <a ui-sref="portfolio">Portfolio</a>
+        <a href="#about" du-smooth-scroll>About</a>
+      </div>
+    </div>
+    <h3 class="contactTitleMobile">CONTACT</h3>
+  </div>
+  <!-- //////////////// Contact Form ////////////// -->
+  <div class="contactFormBox container col-xs-9">
+    <form class="contactInformation col-sm-8 col-xs-12" action="//www.enformed.io/cu7at6up" method="post">
+      <div class="contactTopForm">
+        <div class="form-group">
+          <label class="contactName">Name: </label>
+          <input type="text" name="name" class="nameInput" id="exampleInputName2" required>
+        </div>
+        <div class="form-group">
+          <label class="contactEmail">Email address: </label>
+          <input type="email" name="email" id="exampleInputEmail1" required>
+        </div>
+
+      </div>
+      <div class="contactBottomForm">
+        <div class="form-group">
+          <p class="contactMessage">Message: </p>
+          <textarea rows="6" name="message" required></textarea>
+          <input type="hidden" name="*redirect" value="http://localhost:3002/home" />
+        </div>
+        <button type="submit" ng-click="$ctrl.sentEmail()" class="submitContactInfo btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+    <!-- //////// My contact information ///////// -->
+    <div class="myContactInfo col-sm-4 col-xs-12">
+      <h6 class="myContactData">
+      <i class="contactIcons fa fa-envelope" aria-hidden="true"></i>  vicmcnabby@gmail.com
+      </h6>
+      <h6 class="myContactData">
+      <i class="contactIcons fa fa-phone" aria-hidden="true"></i>  703-517-3476
+      </h6>
+      <h6 class="myContactData">
+        <i class="contactIcons fa fa-linkedin" aria-hidden="true"></i> /in/matthew-victor
+      </h6>
+      <h6 class="myContactData">
+      <i class="contactIcons fa fa-github" aria-hidden="true"></i>  /VicMcNabby
+      </h6>
+      <h6 class="myContactData">
+      <i class="contactIcons fa fa-map-marker" aria-hidden="true"></i>  Denver, Colorado
+      </h6>
+    </div>
+  </div>
+  <div class="contactTitleBox col-xs-1">
+    <h3 class="contactPageTitle">CONTACT</h3>
+  </div>
+</main>

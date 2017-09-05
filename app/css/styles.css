@@ -1,0 +1,502 @@
+.backgroundLanding {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/12/15/196171/big_thumb_b43a1d05e8aeb23b302698a5360e78ec.jpg");
+  background-size: cover;
+}
+
+
+/*//////////////////// Landing Page //////////////////////////
+////////////////////////////////////////////////////////////*/
+
+
+/*///////////////// Nav Items ////////////////*/
+
+.menuItems {
+  z-index: 2;
+  display: flex;
+  width: 65vw;
+  flex-direction: row;
+  justify-content: space-between;
+  animation-name: slideupto;
+  animation-duration: 1.5s;
+}
+
+.about, .resume {
+  text-align: center;
+  color: navy;
+  border-radius: 10%;
+  max-height: 60px;
+  padding-bottom: 10px;
+  margin: 10px 15px 0 15px;
+  font-family: 'Oswald', serif;
+  font-size: 2.5em;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 grey;
+}
+
+.portfolio, .contact {
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  border-radius: 10%;
+  max-height: 60px;
+  padding-bottom: 10px;
+  margin: 10px 15px 0 15px;
+  font-family: 'Oswald', serif;
+  font-size: 2.5em;
+  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 white;
+}
+
+.about:hover {
+  border-bottom: red double;
+  border-width: thick;
+  cursor: pointer;
+  color: white;
+  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+}
+
+.aboutLink:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+}
+
+.aboutLink {
+  color: navy;
+}
+
+.resume:hover {
+  border-bottom: red double;
+  border-width: thick;
+  cursor: pointer;
+  color: white;
+  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+}
+
+.portfolio:hover {
+  border-bottom: red double;
+  border-width: thick;
+  color: navy;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 white;
+  cursor: pointer;
+}
+
+.contact:hover {
+  border-bottom: red double;
+  border-width: thick;
+  cursor: pointer;
+  color: navy;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 white;
+}
+
+
+/*/////////////// Title Items /////////////*/
+
+.backgroundImage {
+  z-index: 1;
+  opacity: .75;
+  position: absolute;
+  background: #f7e1e1;
+  min-height: 625px;
+  min-width: 100%;
+  -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
+  clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
+  animation-name: enlarge;
+  animation-duration: 2.5s;
+}
+
+.titleBox {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.initials {
+  z-index: 2;
+  font-family: 'Bungee Shade', serif;
+  font-size: 16em;
+  color: navy;
+  text-shadow: -1px -0px 0 red, 1px -0px 0 red, -1px 0px 0 red;
+}
+
+.bracket {
+  z-index: 2;
+  font-family: 'Animo', serif;
+  color: navy;
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red;
+}
+
+.descriptionBox {
+  z-index: 2;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  min-width: 70vw;
+}
+
+.description {
+  z-index: 2;
+  font-family: 'Bungee Hairline', serif;
+  color: navy;
+  font-size: 3em;
+  font-weight: 900;
+  animation-name: fontchange;
+  animation-duration: 1.5s;
+}
+
+.lines {
+  z-index: 2;
+  min-width: 60px;
+  border-top: 6px;
+  border-top-style: double;
+  border-width: thick;
+  margin: 35px 5px 0 5px;
+  color: #FB3640;
+}
+
+
+/*////////////// About Page Items ///////////////
+///////////////////////////////////////////////*/
+
+.aboutInfo {
+  z-index: 1;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('https://i.ytimg.com/vi/Wl2sDEpjqQI/maxresdefault.jpg');
+  background-size: cover;
+  background-color: black;
+  background-blend-mode: screen;
+}
+
+
+/*/////////// About Page Menu ///////////////
+///////////////////////////////////////////*/
+
+.about-page-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*position: relative;*/
+}
+
+.about-page-menu:hover {
+  text-shadow: -0px -0px 0 navy, 0px -0px 0 navy, -0px 1px 0 navy;
+}
+
+.glyphicon-menu-hamburger {
+  font-size: 1.5em;
+  color: navy;
+}
+
+.aboutPageDropdown {
+  position: relative;
+  margin-top: 60px;
+  align-self: flex-start;
+}
+
+.about-dropdown-content {
+  display: none;
+  position: relative;
+  opacity: 1;
+  max-width: 140px;
+  margin-left: 0px;
+  z-index: 2;
+}
+
+.about-dropdown-content a {
+  color: navy;
+  background: linear-gradient(to left, #0B2545, #BEE9E8, #62B6CB);
+  font-family: 'Monoton', serif;
+  padding: 12px 16px;
+  border: 2px solid black;
+  margin-top: 10px;
+  border-radius: 8%;
+  text-decoration: none;
+  display: block;
+  box-shadow: 2px 2px 4px grey;
+  cursor: pointer;
+}
+
+.about-dropdown-content a:hover {
+  background: linear-gradient(to right, white, #BEE9E8, #62B6CB);
+  font-weight: 600;
+}
+
+.aboutPageDropdown:hover .about-dropdown-content {
+  display: block;
+}
+
+.aboutPageLink {
+  font-family: 'Bungee Shade', serif;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.aboutPageLink:hover {
+  font-family: 'Bungee Shade', serif;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.aboutPageBracketLink {
+  font-family: 'Animo', serif;
+  color: white;
+  /*display: none;*/
+}
+
+.aboutHamburger.glyphicon.glyphicon-menu-hamburger {
+  font-size: 1.5em;
+  color: white;
+}
+
+
+/*//////////////////////////////////////////////////////
+/////////////// About Page Main Items ////////////////*/
+
+.aboutBox {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.myPhoto {
+  z-index: 5;
+  position: relative;
+  margin-top: 15%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 8px 8px 12px black;
+  border: 2px solid white;
+}
+
+.aboutDescriptionBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 15%;
+  height: 300px;
+  width: 300px;
+}
+
+.aboutDescriptionHeader {
+  color: white;
+  text-align: center;
+  font-family: 'Monoton'
+}
+
+.aboutDescription {
+  z-index: 5;
+  text-align: center;
+  font-family: 'Oswald', serif;
+  color: white
+}
+
+.coolDesign {
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(#0B2545, #5FA8D3);
+  min-height: 625px;
+  min-width: 100%;
+  opacity: .8;
+  -webkit-clip-path: polygon(80% 38%, 31% 100%, 100% 100%);
+  clip-path: polygon(80% 38%, 31% 100%, 100% 100%);
+}
+
+.coolDesign2 {
+  z-index: 3;
+  position: absolute;
+  background: #62B6CB;
+  min-height: 625px;
+  min-width: 100%;
+  opacity: .8;
+  -webkit-clip-path: polygon(37% 73%, 0 100%, 76% 100%);
+  clip-path: polygon(37% 73%, 0 100%, 76% 100%);
+}
+
+.coolDesign3 {
+  z-index: 4;
+  position: absolute;
+  background: linear-gradient(#BEE9E8, navy);
+  min-height: 625px;
+  min-width: 100%;
+  opacity: .8;
+  -webkit-clip-path: polygon(8% 73%, 0 100%, 46% 100%);
+  clip-path: polygon(8% 73%, 0 100%, 46% 100%);
+}
+
+
+/*////////////// Animations /////////////////////
+///////////////////////////////////////////////*/
+
+@keyframes slideupto {
+  0% {
+    margin-top: 300%;
+  }
+  60% {
+    width: 10vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  100% {
+    margin-bottom: 0%
+  }
+}
+
+@keyframes fontchange {
+  0% {
+    font-size: 0em
+  }
+  100% {
+    font-size: 3em
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    min-height: 5px;
+    clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
+    opacity: 1;
+    background: red;
+  }
+  /*50% {
+    min-height: 225px;
+    clip-path: polygon(100% 0, 0 50%, 0 100%, 100% 50%);
+    opacity: .9;
+    background: red;
+  }*/
+  100% {
+    min-height: 625px;
+    clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
+    opacity: .75;
+    background: #f7e1e1;
+    ;
+  }
+}
+
+
+/*////////////////////// Mobile ////////////////////////////
+//////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 700px) {
+  /*////////// Landing Page Mobile////////
+  //////////////////////////////////////*/
+  @keyframes slideup {
+    0% {
+      margin-top: 300%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    100% {
+      margin-bottom: 0%
+    }
+  }
+  .portfolio, .contact {
+    color: navy;
+    font-weight: normal;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 grey;
+  }
+  .portfolio:hover {
+    color: white;
+    text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+  }
+  .contact:hover {
+    color: white;
+    text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+  }
+  .menuItems {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+  }
+  .initials {
+    font-family: 'Bungee Shade', serif;
+    font-size: 6em;
+    color: navy;
+  }
+  .description {
+    font-family: 'Dosis', serif;
+    color: navy;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  .backgroundImage {
+    opacity: .7;
+    min-height: 700px;
+  }
+  @keyframes fontchange {
+    0% {
+      font-size: 0em
+    }
+    100% {
+      font-size: 1.5em
+    }
+  }
+  .lines {
+    min-width: 30px;
+    border-top: 6px;
+    border-top-style: double;
+    margin: 15px 5px 0 5px;
+    color: red;
+  }
+  /*//////// About Page Mobile ////////
+  ////////////////////////////////////*/
+  .aboutPageLink {
+    display: none;
+  }
+  .aboutInfo {
+    padding: 0;
+  }
+  .aboutBox {
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .myPhoto {
+    z-index: 5;
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 35%;
+    box-shadow: 8px 8px 12px black;
+    border: 1px solid black;
+  }
+  .aboutDescriptionHeader {
+    margin: 0;
+  }
+  .aboutDescription {
+    z-index: 7;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Rubik';
+    margin: 2% 3% 0 3%;
+    color: white;
+  }
+  .aboutHamburger.glyphicon.glyphicon-menu-hamburger {
+    display: none;
+  }
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .bracket {
+    display: none;
+  }
+}

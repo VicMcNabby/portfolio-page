@@ -1,0 +1,175 @@
+  .contactInfo {
+    z-index: 1;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url('https://static.pexels.com/photos/132037/pexels-photo-132037.jpeg');
+    background-size: cover;
+    background-color: black;
+    background-blend-mode: screen;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contactTitleBox {
+    padding: auto;
+    margin: 40px 25px 0 0;
+  }
+
+  .contactPageTitle {
+    align-items: center;
+    transform: rotate(90deg);
+    font-size: 6em;
+    color: white;
+    font-family: 'Rubik', serif;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .myContactInfo {
+    border: 1px solid white;
+    background: linear-gradient(#058ED9, grey);
+    margin: 15px 20px 15px;
+    padding-top: 25px;
+    box-shadow: 2px 2px 4px black;
+  }
+
+  .contactMenuBox {
+    margin-left: 50px;
+  }
+
+  .contactFormBox {
+    border: 2px solid white;
+    margin: 50px 50px 50px 0;
+    background: linear-gradient(#058ED9, #336699);
+    opacity: .9;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contactTopForm {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contactBottomForm {}
+
+  .myContactHeader {
+    color: white;
+    font-family: 'Oswald', serif;
+    text-shadow: 1px 1px 3px black;
+  }
+
+  .myContactData {
+    color: black;
+    font-weight: 900;
+    font-family: 'Rubik', serif;
+    /*text-shadow: 0px 0px 4px white;*/
+  }
+
+  input[type=text] {
+    box-shadow: 2px 2px 4px black;
+    padding: 2px;
+    width: 90%;
+  }
+
+  input[type=email] {
+    box-shadow: 2px 2px 4px black;
+    padding: 2px;
+    width: 100%;
+  }
+
+  textarea {
+    box-shadow: 2px 2px 4px black;
+    padding: 10px;
+    min-width: 100%;
+  }
+
+  .contactName {
+    opacity: 1;
+    color: black;
+    text-shadow: 0px 0px 4px white;
+    font-size: 1.5em;
+    font-family: 'Oswald', serif;
+    font-weight: 900;
+    margin-right: 5px;
+    margin-bottom: 0px;
+  }
+
+  .contactMessage {
+    opacity: 1;
+    color: black;
+    text-shadow: 0px 0px 4px white;
+    font-size: 1.5em;
+    font-family: 'Oswald', serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+  }
+
+  .contactEmail {
+    opacity: 1;
+    color: black;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 4px white;
+    font-family: 'Oswald', serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-right: 5px;
+  }
+
+  .submitContactInfo {
+    background: #ffd749;
+    color: black;
+    box-shadow: 2px 2px 4px black;
+  }
+
+  .submitContactInfo:hover {
+    background: #FFBA49;
+    color: black;
+    box-shadow: 1px 0px 1px black;
+  }
+
+  .contactTitleMobile {
+    display: none;
+  }
+
+  .contactIcons {
+    color: white;
+    margin-right: 10px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  @media screen and (max-width: 900px) {
+    .contactInfo {
+      display: flex;
+      flex-direction: column;
+    }
+    .contactFormBox {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .contactEmail {
+      margin-left: 0px;
+    }
+    .contactTitleBox {
+      display: none;
+    }
+    .contactTitleMobile {
+      display: block;
+      color: white;
+      font-family: 'Monoton', serif;
+      font-size: 3em;
+    }
+    .myContactInfo {
+      border: 0px;
+      margin: 15px 0 10px 0;
+      box-shadow: 0px 0px 1px black;
+    }
+  }
+
+  @media screen and (max-width: 1075px) {
+    .aboutPageBracketLink {
+      display: none;
+    }
+  }

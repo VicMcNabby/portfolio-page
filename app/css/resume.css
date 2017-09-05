@@ -1,0 +1,131 @@
+.resumePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#8fa2b7, #5D737E);
+  min-height: 100vh;
+}
+
+.myResume {
+  width: 60%;
+  height: 100%;
+  margin: 25px 0 25px 0;
+  box-shadow: 3px 3px 6px black;
+}
+
+.resumeHeader {
+  color: white;
+  font-family: 'Rubik', serif;
+  text-shadow: 2px 2px 4px black;
+}
+
+.mobileResume {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumeMenuLink {
+  font-family: 'Monoton', serif;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.resumeMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+}
+
+.resumeMenu:hover {
+  text-shadow: -0px -0px 0 white, 0px -0px 0 white, -0px 1px 0 blue;
+}
+
+.dropdown-content-resume {
+  display: none;
+  position: fixed;
+  opacity: 1;
+  min-width: 100px;
+  margin-left: 20px;
+  z-index: 5;
+}
+
+.dropdown-content-resume a {
+  color: navy;
+  background: linear-gradient(to left, #5D737E, #D6F8D6, #8cc2f7);
+  font-family: 'Monoton', serif;
+  padding: 12px 16px;
+  border: 2px solid black;
+  margin-top: 10px;
+  border-radius: 8%;
+  text-decoration: none;
+  display: block;
+  box-shadow: 3px 3px 6px grey;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.dropdown-content-resume a:hover {
+  background: linear-gradient(to right, white, #D6F8D6, #8cc2f7);
+  font-weight: 600;
+}
+
+.dropdown-resume:hover .dropdown-content-resume {
+  display: block;
+}
+
+.dropdown-resume {
+  position: fixed;
+  margin-top: 60px;
+  top: 0;
+  align-self: flex-start;
+  z-index: 5;
+}
+
+.mobileResumeHeader {
+  font-family: 'Oswald', serif;
+  color: black;
+}
+
+.mobileResumeName {
+  font-family: 'Oswald', serif;
+  color: black;
+}
+
+.resumeHamburger {
+  display: block;
+  color: black;
+  text-shadow: 1px 1px 4px white;
+}
+
+@media screen and (max-width: 800px) {
+  .myResume {
+    display: none;
+  }
+  .mobileResume {
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+  }
+  .projectsResume, .experienceResume, .contactResume, .skillsResume, .educationResume {
+    width: 95%;
+    margin: 5px 0 5px 0;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 6px;
+  }
+  .resumeMenuLink {
+    color: black;
+    text-shadow: none;
+  }
+  .resumeHeader {
+    display: none;
+  }
+}

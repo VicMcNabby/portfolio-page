@@ -11,7 +11,7 @@
       <p class="about">
         <a class="aboutLink" href="#about" du-smooth-scroll>about</a>
       </p>
-      <p class="resume">
+      <p class="resume" ui-sref="resume">
         resumé
       </p>
       <p class="portfolio" ui-sref="portfolio">
@@ -48,8 +48,9 @@
     <div class="aboutDescriptionBox">
       <h3 class="aboutDescriptionHeader">About  Me...</h3>
       <p class="aboutDescription">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Hello, and thank you for taking the time to checkout my personal portfolio page. As you probably gathered from the URL, my name is Matthew Victor. Since I was a kid, I've always enjoyed solving logic problems and finding various outlets for my creativety.
+        As an adult, however, I had trouble finding ways to fulfill these passions. I was then introduced to the wonderful world of web development and everything was right again. I am now a full-stack developer with an eye for design. Every day is an
+        opportunity to learn and create something new. I look forward to what the future holds for me in this ever changing technological landscape.
       </p>
     </div>
   </div>
@@ -101,7 +102,7 @@
         <div class="form-group">
           <p class="contactMessage">Message: </p>
           <textarea rows="6" name="message" required></textarea>
-          <input type="hidden" name="*redirect" value="http://localhost:3002/home" />
+          <input type="hidden" name="*redirect" value="http://localhost:3000/home" />
         </div>
         <button type="submit" ng-click="$ctrl.sentEmail()" class="submitContactInfo btn btn-primary">Submit</button>
       </div>

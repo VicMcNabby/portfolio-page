@@ -1,8 +1,10 @@
 .portfolioBackground {
   min-width: 100vw;
   min-height: 100vh;
-  /*background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/12/15/196171/big_thumb_b43a1d05e8aeb23b302698a5360e78ec.jpg");*/
-  /*background-size: cover;*/
+  background: #336699;
+  background: -webkit-linear-gradient(#336699, #28666E, #336699);
+  background: -o-linear-gradient(#336699, #28666E, #336699);
+  background: -moz-linear-gradient(#336699, #28666E, #336699);
   background: linear-gradient(#336699, #28666E, #336699);
   padding-bottom: 20px;
   display: flex;
@@ -10,6 +12,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.portfolioHeader {
+  color: white;
+  font-family: 'Oswald', serif;
+  margin-bottom: 75px;
+  text-shadow: 2px 2px 4px black;
+}
+
+
+/*////////// PORTFOLIO MENU ///////////////*/
 
 .portfolioMenu {
   display: flex;
@@ -48,6 +60,10 @@
 
 .dropdown-content a {
   color: navy;
+  background: #8cc2f7;
+  background: -webkit-linear-gradient(right, white, white, #8cc2f7);
+  background: -o-linear-gradient(left, white, white, #8cc2f7);
+  background: -moz-linear-gradient(left, white, white, #8cc2f7);
   background: linear-gradient(to left, white, white, #8cc2f7);
   font-family: 'Monoton', serif;
   padding: 12px 16px;
@@ -62,6 +78,10 @@
 }
 
 .dropdown-content a:hover {
+  background: #f7e1e1;
+  background: -webkit-linear-gradient(left, white, #f7e1e1, #8cc2f7);
+  background: -o-linear-gradient(right, white, #f7e1e1, #8cc2f7);
+  background: -moz-linear-gradient(right, white, #f7e1e1, #8cc2f7);
   background: linear-gradient(to right, white, #f7e1e1, #8cc2f7);
   font-weight: 600;
 }
@@ -91,49 +111,16 @@
   color: white;
 }
 
-.portfolioHeader {
-  color: white;
-  font-family: 'Oswald', serif;
-  margin-bottom: 75px;
-  text-shadow: 2px 2px 4px black;
-}
+
+/*///////////////////////////////////////////
+///////////// PROJECT ITEMS ////////////////*/
 
 .portfolioDescription {
   text-align: center;
   margin-bottom: 50px;
   width: 70vw;
   color: white;
-  font-family: 'Oswald', serif;
-}
-
-.projectHeaderJello {
-  width: 175px;
-  height: 100px;
-  border: 1px white solid;
-  margin: 10px 0 20px 0;
-  object-fit: cover;
-  border-radius: 2%;
-  box-shadow: 2px 2px 5px 0px black;
-}
-
-.projectHeaderFlizz {
-  width: 275px;
-  height: 100px;
-  border: 1px white solid;
-  margin: 10px 0 20px 0;
-  object-fit: cover;
-  border-radius: 2%;
-  box-shadow: 2px 2px 5px 0px black;
-}
-
-.projectHeaderRegxpress {
-  width: 250px;
-  height: 90px;
-  border: 1px grey solid;
-  margin: 10px 0 20px 0;
-  object-fit: cover;
-  border-radius: 5%;
-  box-shadow: 2px 2px 5px 0px black;
+  font-family: 'Animo', serif;
 }
 
 .projectBox {
@@ -154,7 +141,20 @@
   text-align: center;
   margin: 10px auto;
   color: white;
-  font-family: 'Oswald', serif;
+  font-family: 'Lato', serif;
+}
+
+
+/*/////////////// FLIZZ ITEMS ////////////////*/
+
+.projectHeaderFlizz {
+  width: 275px;
+  height: 100px;
+  border: 1px white solid;
+  margin: 10px 0 20px 0;
+  object-fit: cover;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px 0px black;
 }
 
 .flizzScreenShot {
@@ -169,6 +169,19 @@
   padding: 0;
 }
 
+
+/*//////////////// JELLO ITEMS /////////////*/
+
+.projectHeaderJello {
+  width: 175px;
+  height: 100px;
+  border: 1px white solid;
+  margin: 10px 0 20px 0;
+  object-fit: cover;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px 0px black;
+}
+
 .jelloScreenShot {
   width: 475px;
   border-radius: 2%;
@@ -181,6 +194,19 @@
   padding: 0;
 }
 
+
+/*////////////// REGXPRESS ITEMS ///////////////*/
+
+.projectHeaderRegxpress {
+  width: 250px;
+  height: 90px;
+  border: 1px grey solid;
+  margin: 10px 0 20px 0;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px 0px black;
+}
+
 .regxpressScreenShot {
   width: 500px;
   border-radius: 2%;
@@ -191,24 +217,6 @@
   margin-right: 20px;
   margin-left: 20px;
   padding: 0;
-}
-
-.item {
-  width: 300px;
-  border-radius: 50%;
-  box-shadow: 4px 4px 8px grey;
-  border-style: double;
-  background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/12/15/196171/big_thumb_b43a1d05e8aeb23b302698a5360e78ec.jpg");
-  background-size: cover;
-  height: 300px;
-  margin-right: 20px;
-  margin-left: 20px;
-  /*margin: 50px auto;*/
-  padding-top: 75px;
-}
-
-.demoStuff {
-  margin: 75px;
 }
 
 @media screen and (max-width: 900px) {
@@ -224,9 +232,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  /*.portfolioMenu {
-    position: absolute;
-  }*/
   .bracketLink {
     display: none;
   }
@@ -244,13 +249,5 @@
   }
   .projectDescription {
     width: 80%;
-  }
-  .item {
-    width: 200px;
-    border-radius: 50%;
-    border-style: double;
-    background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/12/15/196171/big_thumb_b43a1d05e8aeb23b302698a5360e78ec.jpg");
-    background-size: cover;
-    height: 200px;
   }
 }

@@ -3,15 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #8fa2b7;
+  background: -webkit-linear-gradient(#8fa2b7, #5D737E);
+  background: -o-linear-gradient(#8fa2b7, #5D737E);
+  background: -moz-linear-gradient(#8fa2b7, #5D737E);
   background: linear-gradient(#8fa2b7, #5D737E);
   min-height: 100vh;
-}
-
-.myResume {
-  width: 60%;
-  height: 100%;
-  margin: 25px 0 25px 0;
-  box-shadow: 3px 3px 6px black;
 }
 
 .resumeHeader {
@@ -20,11 +17,32 @@
   text-shadow: 2px 2px 4px black;
 }
 
-.mobileResume {
-  display: none;
-  flex-direction: column;
-  align-items: center;
+.myResume {
+  z-index: 3;
+  width: 60%;
+  height: 100%;
+  margin: 25px 0 25px 0;
+  box-shadow: 4px 4px 10px black;
+  border: 1px white solid;
 }
+
+.resumeDesign {
+  z-index: 1;
+  position: absolute;
+  background: #A6D9F7;
+  background: -webkit-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
+  background: -o-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
+  background: -moz-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
+  background: linear-gradient( #A6D9F7, #A3A9AA, #69A297);
+  min-height: 80vh;
+  min-width: 100vw;
+  -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
+  clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
+}
+
+
+/*/////////// RESUME MENU /////////////////
+/////////////////////////////////////////*/
 
 .resumeMenuLink {
   font-family: 'Monoton', serif;
@@ -60,6 +78,10 @@
 
 .dropdown-content-resume a {
   color: navy;
+  background: #5D737E;
+  background: -webkit-linear-gradient(right, #5D737E, #D6F8D6, #8cc2f7);
+  background: -o-linear-gradient(left, #5D737E, #D6F8D6, #8cc2f7);
+  background: -moz-linear-gradient(left, #5D737E, #D6F8D6, #8cc2f7);
   background: linear-gradient(to left, #5D737E, #D6F8D6, #8cc2f7);
   font-family: 'Monoton', serif;
   padding: 12px 16px;
@@ -74,6 +96,10 @@
 }
 
 .dropdown-content-resume a:hover {
+  background: #D6F8D6;
+  background: -webkit-linear-gradient(left, white, #D6F8D6, #8cc2f7);
+  background: -o-linear-gradient(right, white, #D6F8D6, #8cc2f7);
+  background: -moz-linear-gradient(right, white, #D6F8D6, #8cc2f7);
   background: linear-gradient(to right, white, #D6F8D6, #8cc2f7);
   font-weight: 600;
 }
@@ -90,6 +116,22 @@
   z-index: 5;
 }
 
+.resumeHamburger {
+  display: block;
+  color: black;
+  text-shadow: 1px 1px 4px white;
+}
+
+
+/*////////// RESUME MOBILE ITEMS ///////////
+//////////////////////////////////////////*/
+
+.mobileResume {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mobileResumeHeader {
   font-family: 'Oswald', serif;
   color: black;
@@ -100,12 +142,6 @@
   color: black;
 }
 
-.resumeHamburger {
-  display: block;
-  color: black;
-  text-shadow: 1px 1px 4px white;
-}
-
 @media screen and (max-width: 800px) {
   .myResume {
     display: none;
@@ -114,6 +150,9 @@
     display: flex;
     max-width: 100%;
     padding: 0;
+  }
+  .resumeDesign {
+    display: none;
   }
   .projectsResume, .experienceResume, .contactResume, .skillsResume, .educationResume {
     width: 95%;

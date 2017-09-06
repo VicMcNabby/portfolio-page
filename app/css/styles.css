@@ -94,7 +94,7 @@
 
 .backgroundImage {
   z-index: 1;
-  opacity: .75;
+  opacity: .7;
   position: absolute;
   background: #f7e1e1;
   min-height: 625px;
@@ -179,7 +179,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /*position: relative;*/
 }
 
 .about-page-menu:hover {
@@ -208,6 +207,10 @@
 
 .about-dropdown-content a {
   color: navy;
+  background: red;
+  background: -webkit-linear-gradient(right, #0B2545, #BEE9E8, #62B6CB);
+  background: -o-linear-gradient(left, #0B2545, #BEE9E8, #62B6CB);
+  background: -moz-linear-gradient(left, #0B2545, #BEE9E8, #62B6CB);
   background: linear-gradient(to left, #0B2545, #BEE9E8, #62B6CB);
   font-family: 'Monoton', serif;
   padding: 12px 16px;
@@ -221,6 +224,9 @@
 }
 
 .about-dropdown-content a:hover {
+  background: -webkit-linear-gradient(left, white, #BEE9E8, #62B6CB);
+  background: -o-linear-gradient(right, white, #BEE9E8, #62B6CB);
+  background: -moz-linear-gradient(right, white, #BEE9E8, #62B6CB);
   background: linear-gradient(to right, white, #BEE9E8, #62B6CB);
   font-weight: 600;
 }
@@ -248,7 +254,6 @@
 .aboutPageBracketLink {
   font-family: 'Animo', serif;
   color: white;
-  /*display: none;*/
 }
 
 .aboutHamburger.glyphicon.glyphicon-menu-hamburger {
@@ -284,7 +289,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 15%;
+  margin-top: 5%;
   height: 300px;
   width: 300px;
 }
@@ -299,12 +304,20 @@
   z-index: 5;
   text-align: center;
   font-family: 'Oswald', serif;
-  color: white
+  color: white;
+  background: #336699;
+  opacity: .8;
+  border-radius: 10%;
+  padding: 10px;
 }
 
 .coolDesign {
   z-index: 2;
   position: relative;
+  background: blue;
+  background: -webkit-linear-gradient(#0B2545, #5FA8D3);
+  background: -o-linear-gradient(#0B2545, #5FA8D3);
+  background: -moz-linear-gradient(#0B2545, #5FA8D3);
   background: linear-gradient(#0B2545, #5FA8D3);
   min-height: 625px;
   min-width: 100%;
@@ -327,6 +340,10 @@
 .coolDesign3 {
   z-index: 4;
   position: absolute;
+  background: navy;
+  background: -webkit-linear-gradient(#BEE9E8, navy);
+  background: -o-linear-gradient(#BEE9E8, navy);
+  background: -moz-linear-gradient(#BEE9E8, navy);
   background: linear-gradient(#BEE9E8, navy);
   min-height: 625px;
   min-width: 100%;
@@ -353,7 +370,30 @@
   }
 }
 
+@-webkit-keyframes slideupto {
+  0% {
+    margin-top: 300%;
+  }
+  60% {
+    width: 10vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  100% {
+    margin-bottom: 0%
+  }
+}
+
 @keyframes fontchange {
+  0% {
+    font-size: 0em
+  }
+  100% {
+    font-size: 3em
+  }
+}
+
+@-webkit-keyframes fontchange {
   0% {
     font-size: 0em
   }
@@ -364,23 +404,35 @@
 
 @keyframes enlarge {
   0% {
-    min-height: 5px;
+    min-height: 325px;
+    -webkit-clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
     clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
     opacity: 1;
     background: red;
   }
-  /*50% {
-    min-height: 225px;
-    clip-path: polygon(100% 0, 0 50%, 0 100%, 100% 50%);
-    opacity: .9;
-    background: red;
-  }*/
   100% {
     min-height: 625px;
+    -webkit-clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
+    clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
+    opacity: .7;
+    background: #f7e1e1;
+  }
+}
+
+@-webkit-keyframes enlarge {
+  0% {
+    min-height: 425px;
+    -webkit-clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
+    clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
+    opacity: 1;
+    background: red;
+  }
+  100% {
+    min-height: 625px;
+    -webkit-clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
     clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
     opacity: .75;
     background: #f7e1e1;
-    ;
   }
 }
 
@@ -392,6 +444,16 @@
   /*////////// Landing Page Mobile////////
   //////////////////////////////////////*/
   @keyframes slideup {
+    0% {
+      margin-top: 300%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    100% {
+      margin-bottom: 0%
+    }
+  }
+  @-webkit-keyframes slideup {
     0% {
       margin-top: 300%;
       flex-direction: column;
@@ -442,6 +504,14 @@
       font-size: 1.5em
     }
   }
+  @-webkit-keyframes fontchange {
+    0% {
+      font-size: 0em
+    }
+    100% {
+      font-size: 1.5em
+    }
+  }
   .lines {
     min-width: 30px;
     border-top: 6px;
@@ -463,17 +533,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 0;
+    padding: 0;
   }
   .myPhoto {
     z-index: 5;
     margin: 0;
+    margin-bottom: 15px;
     height: 200px;
     width: 200px;
     object-fit: cover;
     border-radius: 35%;
     box-shadow: 8px 8px 12px black;
     border: 1px solid black;
+  }
+  .aboutDescriptionBox {
+    width: 100%;
+    margin-top: 0;
   }
   .aboutDescriptionHeader {
     margin: 0;
@@ -483,7 +559,8 @@
     text-align: center;
     font-weight: 600;
     font-family: 'Rubik';
-    margin: 2% 3% 0 3%;
+    margin: 0;
+    padding: 0;
     color: white;
   }
   .aboutHamburger.glyphicon.glyphicon-menu-hamburger {

@@ -1,5 +1,5 @@
 .backgroundLanding {
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/12/15/196171/big_thumb_b43a1d05e8aeb23b302698a5360e78ec.jpg");
   background-size: cover;
@@ -101,8 +101,6 @@
   min-width: 100%;
   -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
   clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-  animation-name: enlarge;
-  animation-duration: 2.5s;
 }
 
 .titleBox {
@@ -143,8 +141,6 @@
   color: navy;
   font-size: 3em;
   font-weight: 900;
-  animation-name: fontchange;
-  animation-duration: 1.5s;
 }
 
 .lines {
@@ -289,7 +285,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
   height: 300px;
   width: 300px;
 }
@@ -305,7 +301,7 @@
   text-align: center;
   font-family: 'Oswald', serif;
   color: white;
-  background: #336699;
+  background: #000;
   opacity: .8;
   border-radius: 10%;
   padding: 10px;
@@ -384,58 +380,6 @@
   }
 }
 
-@keyframes fontchange {
-  0% {
-    font-size: 0em
-  }
-  100% {
-    font-size: 3em
-  }
-}
-
-@-webkit-keyframes fontchange {
-  0% {
-    font-size: 0em
-  }
-  100% {
-    font-size: 3em
-  }
-}
-
-@keyframes enlarge {
-  0% {
-    min-height: 325px;
-    -webkit-clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
-    clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
-    opacity: 1;
-    background: red;
-  }
-  100% {
-    min-height: 625px;
-    -webkit-clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-    clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-    opacity: .7;
-    background: #f7e1e1;
-  }
-}
-
-@-webkit-keyframes enlarge {
-  0% {
-    min-height: 425px;
-    -webkit-clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
-    clip-path: polygon(100% 0, 0 70%, 0 100%, 100% 30%);
-    opacity: 1;
-    background: red;
-  }
-  100% {
-    min-height: 625px;
-    -webkit-clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-    clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-    opacity: .75;
-    background: #f7e1e1;
-  }
-}
-
 
 /*////////////////////// Mobile ////////////////////////////
 //////////////////////////////////////////////////////////*/
@@ -495,22 +439,6 @@
   .backgroundImage {
     opacity: .7;
     min-height: 700px;
-  }
-  @keyframes fontchange {
-    0% {
-      font-size: 0em
-    }
-    100% {
-      font-size: 1.5em
-    }
-  }
-  @-webkit-keyframes fontchange {
-    0% {
-      font-size: 0em
-    }
-    100% {
-      font-size: 1.5em
-    }
   }
   .lines {
     min-width: 30px;
@@ -574,6 +502,12 @@
 
 @media screen and (max-width: 815px) {
   .bracket {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 725px) {
+  .coolDesign, .coolDesign2, .coolDesign3 {
     display: none;
   }
 }

@@ -21,14 +21,14 @@
   z-index: 3;
   width: 60%;
   height: 100%;
-  margin: 25px 0 25px 0;
+  margin: 155px 0 25px 0;
   box-shadow: 4px 4px 10px black;
   border: 1px white solid;
 }
 
 .resumeDesign {
   z-index: 1;
-  position: absolute;
+  position: relative;
   background: #A6D9F7;
   background: -webkit-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
   background: -o-linear-gradient(#A6D9F7, #A3A9AA, #69A297);

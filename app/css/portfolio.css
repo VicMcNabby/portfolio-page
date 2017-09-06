@@ -118,9 +118,10 @@
 .portfolioDescription {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 1.5em;
   width: 70vw;
   color: white;
-  font-family: 'Animo', serif;
+  font-family: 'Lato', serif;
 }
 
 .projectBox {

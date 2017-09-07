@@ -26,7 +26,8 @@
   border: 1px white solid;
 }
 
-.resumeDesign {
+
+/*.resumeDesign {
   z-index: 1;
   position: relative;
   background: #A6D9F7;
@@ -38,7 +39,7 @@
   min-width: 100vw;
   -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
   clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-}
+}*/
 
 
 /*/////////// RESUME MENU /////////////////

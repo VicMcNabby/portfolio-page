@@ -220,6 +220,31 @@
   padding: 0;
 }
 
+
+/*/////////////// MOMO ITEMS ///////////////////*/
+
+.projectHeaderMomo {
+  width: 250px;
+  height: 90px;
+  border: 1px grey solid;
+  margin: 10px 0 20px 0;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px 0px black;
+}
+
+.momoScreenShot {
+  width: 210px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px 0px black;
+  border: 1px grey solid;
+  object-fit: contain;
+  height: 400px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0;
+}
+
 @media screen and (max-width: 900px) {
   .jelloScreenShot {
     display: none;
@@ -228,6 +253,15 @@
     display: none;
   }
   .regxpressScreenShot {
+    display: none;
+  }
+  .momoScreenShot {
+    display: none;
+  }
+  .projectHeaderMomo {
+    margin-top: 30px;
+  }
+  .printResume {
     display: none;
   }
 }

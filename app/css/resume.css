@@ -26,6 +26,24 @@
   border: 1px white solid;
 }
 
+.printResume {
+  text-decoration: none;
+  color: black;
+  font-family: 'Oswald', serif;
+  border: solid 1px red;
+  padding: 3px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 2px 2px 6px black;
+}
+
+.printResume:hover {
+  text-decoration: none;
+  color: black;
+  /*background: #f7e1e1;*/
+  box-shadow: 0px 0px 2px black;
+}
+
 
 /*.resumeDesign {
   z-index: 1;

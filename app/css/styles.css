@@ -1,16 +1,35 @@
-.backgroundLanding {
-  min-width: 100%;
-  min-height: 100vh;
-  background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/12/15/196171/big_thumb_b43a1d05e8aeb23b302698a5360e78ec.jpg");
-  background-size: cover;
+body {
+  background: #c4dbb8;
 }
 
+.backgroundLanding {
+  min-width: 96%;
+  min-height: 98vh;
+  margin: 2%;
+  border-radius: 4px;
+  box-shadow: 3px 3px 6px #111;
+  background: #999;
+}
+
+.MVLogo {
+  width: 300px;
+  z-index: 10;
+}
+
+.MVLogoMenu {
+  width: 40px;
+  z-index: 10;
+}
 
 /*//////////////////// Landing Page //////////////////////////
 ////////////////////////////////////////////////////////////*/
 
-
 /*///////////////// Nav Items ////////////////*/
+
+@font-face {
+  font-family: 'norwester';
+  src: url('fonts/norwester.otf');
+}
 
 .menuItems {
   z-index: 2;
@@ -18,10 +37,11 @@
   width: 65vw;
   flex-direction: row;
   justify-content: space-between;
-  animation-name: slideupto;
-  animation-duration: 1.5s;
+  /* animation-name: slideupto;
+  animation-duration: 1.5s; */
 }
 
+/*
 .about, .resume {
   text-align: center;
   color: navy;
@@ -32,75 +52,75 @@
   font-family: 'Oswald', serif;
   font-size: 2.5em;
   text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 grey;
-}
+} */
 
-.portfolio, .contact {
+.portfolio, .contact, .about, .resume {
   text-align: center;
   font-weight: 500;
-  color: white;
+  color: #fff;
   border-radius: 10%;
   max-height: 60px;
   padding-bottom: 10px;
   margin: 10px 15px 0 15px;
   font-family: 'Oswald', serif;
   font-size: 2.5em;
-  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 grey, -1px 1px 0 #000;
 }
 
 .about:hover {
-  border-bottom: red double;
+  border-bottom: #000 double;
   border-width: thick;
   cursor: pointer;
-  color: white;
-  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+  color: #c4dbb8;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 grey, -1px 1px 0 #000;
 }
 
 .aboutLink:hover {
   text-decoration: none;
-  color: white;
-  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+  color: #c4dbb8;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 grey, -1px 1px 0 #000;
 }
 
 .aboutLink {
-  color: navy;
+  color: #fff;
 }
 
 .resume:hover {
-  border-bottom: red double;
+  border-bottom: #000 double;
   border-width: thick;
   cursor: pointer;
-  color: white;
-  text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
+  color: #c4dbb8;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 grey, -1px 1px 0 #000;
 }
 
 .portfolio:hover {
-  border-bottom: red double;
+  border-bottom: #000 double;
   border-width: thick;
-  color: navy;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 white;
+  color: #c4dbb8;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 grey, -1px 1px 0 #000;
   cursor: pointer;
 }
 
 .contact:hover {
-  border-bottom: red double;
+  border-bottom: #000 double;
   border-width: thick;
   cursor: pointer;
-  color: navy;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 white;
+  color: #c4dbb8;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 grey, -1px 1px 0 #000;
 }
-
 
 /*/////////////// Title Items /////////////*/
 
 .backgroundImage {
   z-index: 1;
-  opacity: .7;
+  opacity: .9;
   position: absolute;
-  background: #f7e1e1;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/K2%2C_Mount_Godwin_Austen%2C_Chogori%2C_Savage_Mountain.jpg');
+  background-size: cover;
   min-height: 625px;
-  min-width: 100%;
-  -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
-  clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
+  min-width: 96%;
+  -webkit-clip-path: polygon(179% 0, 0 43%, 0 88%, 100% 63%);
+  clip-path: polygon(179% 0, 0 43%, 0 88%, 100% 63%);
 }
 
 .titleBox {
@@ -137,8 +157,9 @@
 
 .description {
   z-index: 2;
-  font-family: 'Bungee Hairline', serif;
-  color: navy;
+  font-family: 'Dosis', serif;
+  /* Dosis|Oswald|Arimo|Monoton|Black+Ops+One|Bungee|Bungee+Shade|Rubik|  */
+  color: #000;
   font-size: 3em;
   font-weight: 900;
 }
@@ -148,25 +169,26 @@
   min-width: 60px;
   border-top: 6px;
   border-top-style: double;
-  border-width: thick;
-  margin: 35px 5px 0 5px;
-  color: #FB3640;
+  border-width: 12px;
+  margin: 33px 5px 0px 5px;
+  color: #7cb852;
 }
-
 
 /*////////////// About Page Items ///////////////
 ///////////////////////////////////////////////*/
 
 .aboutInfo {
   z-index: 1;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 96%;
+  min-height: 98vh;
+  margin: 2%;
+  border-radius: 4px;
+  box-shadow: 3px 3px 6px #111;
   background: url('https://i.ytimg.com/vi/Wl2sDEpjqQI/maxresdefault.jpg');
   background-size: cover;
   background-color: black;
   background-blend-mode: screen;
 }
-
 
 /*/////////// About Page Menu ///////////////
 ///////////////////////////////////////////*/
@@ -256,7 +278,6 @@
   font-size: 1.5em;
   color: white;
 }
-
 
 /*//////////////////////////////////////////////////////
 /////////////// About Page Main Items ////////////////*/
@@ -348,7 +369,6 @@
   clip-path: polygon(8% 73%, 0 100%, 46% 100%);
 }
 
-
 /*////////////// Animations /////////////////////
 ///////////////////////////////////////////////*/
 
@@ -380,7 +400,6 @@
   }
 }
 
-
 /*////////////////////// Mobile ////////////////////////////
 //////////////////////////////////////////////////////////*/
 
@@ -407,17 +426,10 @@
       margin-bottom: 0%
     }
   }
-  .portfolio, .contact {
-    color: navy;
-    font-weight: normal;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 grey, -1px 1px 0 grey;
-  }
   .portfolio:hover {
-    color: white;
     text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
   }
   .contact:hover {
-    color: white;
     text-shadow: -1px -1px 0 navy, 1px -1px 0 grey, -1px 1px 0 navy;
   }
   .menuItems {
@@ -433,19 +445,19 @@
   .description {
     font-family: 'Dosis', serif;
     color: navy;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 900;
   }
   .backgroundImage {
-    opacity: .7;
+    opacity: .9;
     min-height: 700px;
   }
   .lines {
-    min-width: 30px;
-    border-top: 6px;
+    min-width: 50px;
+    border-top: 12px;
     border-top-style: double;
-    margin: 15px 5px 0 5px;
-    color: red;
+    margin: 20px 5px 0 5px;
+    color: #7cb852;
   }
   /*//////// About Page Mobile ////////
   ////////////////////////////////////*/
@@ -490,6 +502,8 @@
     margin: 0;
     padding: 0;
     color: white;
+    width: 98%;
+    padding: 8px;
   }
   .aboutHamburger.glyphicon.glyphicon-menu-hamburger {
     display: none;

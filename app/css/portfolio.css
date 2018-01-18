@@ -20,7 +20,6 @@
   text-shadow: 2px 2px 4px black;
 }
 
-
 /*////////// PORTFOLIO MENU ///////////////*/
 
 .portfolioMenu {
@@ -111,7 +110,6 @@
   color: white;
 }
 
-
 /*///////////////////////////////////////////
 ///////////// PROJECT ITEMS ////////////////*/
 
@@ -145,7 +143,6 @@
   font-family: 'Lato', serif;
 }
 
-
 /*/////////////// FLIZZ ITEMS ////////////////*/
 
 .projectHeaderFlizz {
@@ -169,7 +166,6 @@
   margin-left: 20px;
   padding: 0;
 }
-
 
 /*//////////////// JELLO ITEMS /////////////*/
 
@@ -195,7 +191,6 @@
   padding: 0;
 }
 
-
 /*////////////// REGXPRESS ITEMS ///////////////*/
 
 .projectHeaderRegxpress {
@@ -219,7 +214,6 @@
   margin-left: 20px;
   padding: 0;
 }
-
 
 /*/////////////// MOMO ITEMS ///////////////////*/
 
@@ -245,6 +239,31 @@
   padding: 0;
 }
 
+/* ///////////////// CHASEFILMS ////////////////// */
+
+.projectHeaderChaseFilms {
+  width: 290px;
+  height: 135px;
+  border: 1px grey solid;
+  margin: 10px 0 20px 0;
+  object-fit: cover;
+  border-radius: 1%;
+  box-shadow: 2px 2px 5px 0px black;
+}
+
+.chaseFilmsScreenShot {
+  width: 480px;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px 0px black;
+  border: 1px grey solid;
+  object-fit: cover;
+  height: 300px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0;
+}
+
 @media screen and (max-width: 900px) {
   .jelloScreenShot {
     display: none;
@@ -256,6 +275,9 @@
     display: none;
   }
   .momoScreenShot {
+    display: none;
+  }
+  .chaseFilmsScreenShot {
     display: none;
   }
   .projectHeaderMomo {

@@ -8,7 +8,11 @@
   background: -o-linear-gradient(#8fa2b7, #5D737E);
   background: -moz-linear-gradient(#8fa2b7, #5D737E);
   background: linear-gradient(#8fa2b7, #5D737E);
-  min-height: 100vh;
+  min-width: 96%;
+  min-height: 98vh;
+  margin: 2%;
+  border-radius: 4px;
+  box-shadow: 3px 3px 6px #111;
 }
 
 .resumeHeader {
@@ -21,7 +25,7 @@
   z-index: 3;
   width: 60%;
   height: 100%;
-  margin: 155px 0 25px 0;
+  margin: 15px 0 25px 0;
   box-shadow: 4px 4px 10px black;
   border: 1px white solid;
 }
@@ -30,11 +34,12 @@
   text-decoration: none;
   color: black;
   font-family: 'Oswald', serif;
-  border: solid 1px red;
+  border: solid 1px #7cb852;
   padding: 3px;
-  border-radius: 8px;
+  border-radius: 2px;
   background: white;
-  box-shadow: 2px 2px 6px black;
+  box-shadow: 2px 2px 4px black;
+  margin: 5px;
 }
 
 .printResume:hover {
@@ -43,7 +48,6 @@
   /*background: #f7e1e1;*/
   box-shadow: 0px 0px 2px black;
 }
-
 
 /*.resumeDesign {
   z-index: 1;
@@ -58,7 +62,6 @@
   -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
   clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
 }*/
-
 
 /*/////////// RESUME MENU /////////////////
 /////////////////////////////////////////*/
@@ -79,7 +82,7 @@
   align-items: center;
   position: fixed;
   z-index: 5;
-  top: 0;
+  top: 10px;
 }
 
 .resumeMenu:hover {
@@ -140,7 +143,6 @@
   color: black;
   text-shadow: 1px 1px 4px white;
 }
-
 
 /*////////// RESUME MOBILE ITEMS ///////////
 //////////////////////////////////////////*/

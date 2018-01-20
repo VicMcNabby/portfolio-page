@@ -184,9 +184,9 @@ body {
   margin: 2%;
   border-radius: 4px;
   box-shadow: 3px 3px 6px #111;
-  background: url('https://i.ytimg.com/vi/Wl2sDEpjqQI/maxresdefault.jpg');
+  background: url('https://wallpaperscraft.com/image/mountains_night_sky_road_bends_darkness_63269_1920x1080.jpg');
   background-size: cover;
-  background-color: black;
+  background-color: #112d02;
   background-blend-mode: screen;
 }
 
@@ -293,7 +293,7 @@ body {
 .myPhoto {
   z-index: 5;
   position: relative;
-  margin-top: 15%;
+  margin-top: 10%;
   height: 300px;
   width: 300px;
   object-fit: cover;
@@ -306,9 +306,9 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 10%;
+  margin-top: 7%;
   height: 300px;
-  width: 300px;
+  width: 350px;
 }
 
 .aboutDescriptionHeader {
@@ -320,10 +320,10 @@ body {
 .aboutDescription {
   z-index: 5;
   text-align: center;
-  font-family: 'Oswald', serif;
+  font-family: 'Roboto', serif;
+  font-size: 14px;
   color: white;
-  background: #000;
-  opacity: .8;
+  background: #06383a;
   border-radius: 10%;
   padding: 10px;
 }
@@ -336,6 +336,7 @@ body {
   background: -o-linear-gradient(#0B2545, #5FA8D3);
   background: -moz-linear-gradient(#0B2545, #5FA8D3);
   background: linear-gradient(#0B2545, #5FA8D3);
+  background: #70776b;
   min-height: 625px;
   min-width: 100%;
   opacity: .8;
@@ -346,7 +347,7 @@ body {
 .coolDesign2 {
   z-index: 3;
   position: absolute;
-  background: #62B6CB;
+  background: #285b68;
   min-height: 625px;
   min-width: 100%;
   opacity: .8;
@@ -362,6 +363,7 @@ body {
   background: -o-linear-gradient(#BEE9E8, navy);
   background: -moz-linear-gradient(#BEE9E8, navy);
   background: linear-gradient(#BEE9E8, navy);
+  background: #1e7cb2;
   min-height: 625px;
   min-width: 100%;
   opacity: .8;
@@ -444,8 +446,8 @@ body {
   }
   .description {
     font-family: 'Dosis', serif;
-    color: navy;
-    font-size: 2em;
+    color: #000;
+    font-size: 23px;
     font-weight: 900;
   }
   .backgroundImage {
@@ -456,7 +458,7 @@ body {
     min-width: 50px;
     border-top: 12px;
     border-top-style: double;
-    margin: 20px 5px 0 5px;
+    margin: 15px 5px 0 5px;
     color: #7cb852;
   }
   /*//////// About Page Mobile ////////
@@ -504,6 +506,7 @@ body {
     color: white;
     width: 98%;
     padding: 8px;
+    font-size: 13px;
   }
   .aboutHamburger.glyphicon.glyphicon-menu-hamburger {
     display: none;

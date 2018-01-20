@@ -5,7 +5,7 @@
     margin: 2%;
     border-radius: 4px;
     box-shadow: 3px 3px 6px #111;
-    background: url('http://www.androidwallpper.com/wp-content/uploads/2017/01/Mountain-Wonderful-HD-Wallpapers-Android-Phone-BHOK.jpg');
+    background: url('http://yetimountainhome.com/images/everest-ymh-trek.jpg');
     background-size: cover;
     background-color: black;
     background-blend-mode: screen;
@@ -29,11 +29,7 @@
 
   .myContactInfo {
     border: 1px solid white;
-    background: #058ED9;
-    background: -webkit-linear-gradient(#058ED9, grey);
-    background: -o-linear-gradient(#058ED9, grey);
-    background: -moz-linear-gradient(#058ED9, grey);
-    background: linear-gradient(#058ED9, grey);
+    background: #bdc6b6;
     margin: 15px 20px 15px;
     padding-top: 25px;
     box-shadow: 2px 2px 2px black;
@@ -46,12 +42,8 @@
   .contactFormBox {
     border: 2px solid white;
     margin: 50px 20px 20px 0;
-    background: #336699;
-    background: -webkit-linear-gradient(#058ED9, #336699);
-    background: -o-linear-gradient(#058ED9, #336699);
-    background: -moz-linear-gradient(#058ED9, #336699);
-    background: linear-gradient(#058ED9, #336699);
     opacity: .9;
+    background: #70776b;
     padding: 20px 0 20px 0;
     display: flex;
     justify-content: space-around;
@@ -153,7 +145,7 @@
   .contactPageLink {
     font-family: 'Bungee Shade', serif;
     font-size: 2.5em;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     margin-bottom: 0;
     margin-top: 20px;
@@ -162,7 +154,7 @@
   .contactPageLink:hover {
     font-family: 'Bungee Shade', serif;
     font-size: 2.5em;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     margin-bottom: 0;
   }
@@ -174,7 +166,7 @@
 
   .contactHamburger.glyphicon.glyphicon-menu-hamburger {
     font-size: 1.5em;
-    color: #000;
+    color: #fff;
     margin-top: 20px;
   }
 

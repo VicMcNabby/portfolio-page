@@ -38,6 +38,7 @@
 .glyphicon-menu-hamburger {
   font-size: 1.5em;
   color: white;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -253,6 +254,31 @@
 
 .chaseFilmsScreenShot {
   width: 480px;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px 0px black;
+  border: 1px grey solid;
+  object-fit: cover;
+  height: 300px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* ///////////////// PAWFINDER ////////////////// */
+
+.projectHeaderPawfinder {
+  width: 290px;
+  height: 65px;
+  border: 1px grey solid;
+  margin: 10px 0 20px 0;
+  object-fit: contain;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px 0px black;
+}
+
+.pawfinderScreenShot {
+  width: 500px;
   border-radius: 2%;
   box-shadow: 2px 2px 5px 0px black;
   border: 1px grey solid;

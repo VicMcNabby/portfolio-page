@@ -142,6 +142,7 @@
   display: block;
   color: black;
   text-shadow: 1px 1px 4px white;
+  cursor: pointer;
 }
 
 /*////////// RESUME MOBILE ITEMS ///////////

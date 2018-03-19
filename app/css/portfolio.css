@@ -31,10 +31,13 @@
   position: fixed;
   z-index: 5;
   top: 0;
+  background: #700e05;
+  padding: 1px;
+  border-radius: 2px;
 }
 
 .portfolioMenu:hover {
-  text-shadow: -0px -0px 0 #fff, 0px -0px 0 #fff, -0px 1px 0 #fff;
+  text-shadow: -0px -0px 0 #fff, 0px -0px 0 #fff, -0px 1px 0 #700e05;
 }
 
 .glyphicon-menu-hamburger {
@@ -63,7 +66,7 @@
 
 .dropdown-content a {
   color: #fff;
-  background: #8cc2f7;
+  background: #ad2e2e;
   font-family: 'Oswald', serif;
   padding: 6px 8px;
   border: 1px solid black;
@@ -79,7 +82,7 @@
 }
 
 .dropdown-content a:hover {
-  background: #094249;
+  background: #5b0303;
   border: 1px solid #fff;
 }
 

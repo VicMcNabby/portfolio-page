@@ -3,16 +3,16 @@
     .module('portfolio')
     .controller('PortfolioController', PortfolioController)
 
-  AOS.init({
-    // offset: 200,
-    duration: 500,
-    easing: 'ease-in-sine',
-    delay: 50
-  })
-  AOS.refresh();
-
-  function PortfolioController() {
+  function PortfolioController($http) {
     const vm = this
+
+    vm.$onInit = function() {
+      $http.get('http://localhost:3000/api/v1/projects')
+        .then(results => {
+          console.log(results);
+          vm.projects = results.data
+        })
+    }
 
   }
 }());

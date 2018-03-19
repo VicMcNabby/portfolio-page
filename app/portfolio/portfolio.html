@@ -19,78 +19,14 @@
     to learn more each day, and look forward to what projects and oppurtunities the future holds. Please enjoy!</p>
 
   <!-- //////////// Project Screen Shots and Description ////// -->
-  <!-- /////////// FLIZZ ////////////// -->
-  <div class="projectBox" data-aos="fade-right">
+  <div class="projectBox" ng-repeat="project in $ctrl.projects">
     <div class="projectDescriptionBox">
-      <a href="https://flizz-24cff.firebaseapp.com/" target="_blank"><img class="projectHeaderFlizz" src="images/FlizzTitleDog.png" /></a>
+      <a href="{{project.url}}" target="_blank"><img class="projectHeader" src="{{project.title}}" /></a>
       <p class="projectDescription">
-        'Flizz' is a multimedia search engine designed to display the top results for 'books', 'movies', and 'games' of a particular search parameter. Each individual result will display an image and brief description. Also, an Amazon link will be attached to
-        each result as well as media specific links, such as the platforms available for each game, or a link to the trailer for each movie. The goal of this app is to introduce the user to different ways to consume their favorite topics.
+        {{project.description}}
       </p>
     </div>
-    <a href="https://flizz-24cff.firebaseapp.com/" target="_blank"><img src="images/FlizzScreenShot.png" class="flizzScreenShot" /></a>
+    <a href="{{project.url}}" target="_blank"><img src="{{project.screenshot}}" class="screenShot" /></a>
   </div>
-  <!-- ///////////// JELLO ///////////// -->
-  <div class="projectBox" data-aos="fade-left">
-    <a href="https://jello-jamms.firebaseapp.com/index.html" target="_blank"><img src="images/JelloMain.png" class="jelloScreenShot" /></a>
-    <div class="projectDescriptionBox">
-      <a href="https://jello-jamms.firebaseapp.com/index.html" target="_blank"><img src="images/JelloTitle.png" class="projectHeaderJello" /></a>
-      <p class="projectDescription">
-        'Jello' is a workflow organization app for teams and/or individuals. We envision this app will be used by developers, or any team based environment to maintain organization. 'Jello' will allow the user to see a visual representation of their tasks organized
-        by priority, enable them to create new projects, and assist in assigning tasks/stories to a particular user.. This was a four member group project completed in a weeks time. We set out to create our own version of a 'Trello' type application.
-      </p>
-    </div>
-  </div>
-  <!-- ///////////// REGXPRESS /////////////// -->
-  <div class="projectBox" data-aos="fade-right">
-    <div class="projectDescriptionBox">
-      <a href="https://regxpress-cb9b9.firebaseapp.com/" target="_blank"><img src="images/regxpressTitle.png" class="projectHeaderRegxpress" /></a>
-      <p class="projectDescription">
-        'RegXpress' is real time contest between one or more players where the goal is to accumulate points by solving complex, scenario based word pattern problems using regex. Socket.IO was used in order to enable the realtime communication between multiple
-        users. For our front-end framework, we used AngularJS to bring our app to fruition. This was a group collaboration between myself and three other classmates. We followed the agile workflow and used feature branching on Github to avoid merge conflicts.</p>
-    </div>
-    <a href="https://regxpress-cb9b9.firebaseapp.com/" target="_blank"><img src="images/regxpressLandingPage.png" class="regxpressScreenShot" /></a>
-  </div>
-  <!-- ///////////////// Momo //////////////// -->
-  <div class="projectBox" data-aos="fade-left">
-    <a href="https://github.com/VicMcNabby/momento-mobile" target="_blank"><img src="images/momoScreenShot.png" class="momoScreenShot" /></a>
-    <div class="projectDescriptionBox">
-      <a href="https://github.com/VicMcNabby/momento-mobile" target="_blank"><img class="projectHeaderMomo" src="images/momoTitle.png" /></a>
-      <p class="projectDescription">
-        This is a hybrid mobile application for Moms to find other Moms within their specified location. The user will be able to find baby/kid friendly activities nearby, as well as family friendly restaurants. There is also an advice section to give and recieve
-        advice with other Moms. Finally the coupon section, powered by the Groupon API, will help the user save money on various family friendly activitites.
-      </p>
-    </div>
-  </div>
-  <!-- //////////////// Chase Films ////////////// -->
-  <div class="projectBox" data-aos="fade-right">
-    <div class="projectDescriptionBox">
-      <a href="https://chase-films.firebaseapp.com/" target="_blank"><img src="images/chasefilmstitle.png" class="projectHeaderChaseFilms" /></a>
-      <p class="projectDescription">
-        'ChaseFilms' is a movie database application that lets the user search through the entire catalog and see detailed information on each film. The user can then rate movies that they have seen and add it to their 'collection' page. If the user hasn't seen
-        a particular film, but is interested in doing so, they can add it to their 'watchlist' page. After they get around to watching it, they then rate it and it is added to their 'collection' page. This app was created with AngularJS.</p>
-    </div>
-    <a href="https://chase-films.firebaseapp.com/" target="_blank"><img src="images/chasefilmsscreen.png" class="chaseFilmsScreenShot" /></a>
-  </div>
-  <!-- ///////////// PAWFINDER ///////////// -->
-  <div class="projectBox" data-aos="fade-left">
-    <a href="https://pawfinder-d6dbd.firebaseapp.com/" target="_blank"><img src="images/pawfinderScreen.png" class="pawfinderScreenShot" /></a>
-    <div class="projectDescriptionBox">
-      <a href="https://pawfinder-d6dbd.firebaseapp.com/" target="_blank"><img src="images/pawfinderLogo.png" class="projectHeaderPawfinder" /></a>
-      <p class="projectDescription">
-        'Pawfinder' is a web application with the purpose of helping the user find a rescue dog or cat in whichever zipcode they enter. The app displays the top 100 results over 4 pages that contain 25 pets each. Clicking on the individual pet photo will bring
-        up a custom modal which gives much more detailed info on the respective pet as well as all the important contact details. This app was made with AngularJS and utilizes the petfinder API.
-      </p>
-    </div>
-  </div>
-  <!-- /////////////// Chase News /////////////// -->
-  <div class="projectBox" data-aos="fade-right">
-    <div class="projectDescriptionBox">
-      <a href="https://chase-news.firebaseapp.com/" target="_blank"><img src="images/chasenewsLogo.png" class="projectHeaderPawfinder" /></a>
-      <p class="projectDescription">
-        'Chase News' is a news gathering web application where the user can find the latest articles in a chosen category, or from a specific news outlet. This app is fully mobile responsive and was made with AngularJS. It utilizes the API from newsapi.org.
-      </p>
-    </div>
-    <a href="https://chase-news.firebaseapp.com/" target="_blank"><img src="images/chasenewsScreen.png" class="pawfinderScreenShot" /></a>
-  </div>
+
 </main>

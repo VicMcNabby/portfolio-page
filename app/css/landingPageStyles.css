@@ -1,4 +1,8 @@
 body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
   overflow-x: hidden;
 }
 
@@ -46,11 +50,11 @@ body {
 }
 
 .menuImage {
-  height: 170px;
-  width: 170px;
+  height: 190px;
+  width: 190px;
   margin-top: 65px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 25px;
   background: #999;
   padding: 15px;
   border-radius: 15%;
@@ -79,7 +83,7 @@ body {
 
 .info {
   background-color: #d7dfed;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Lato', sans-serif;
   padding: 45px 80px 70px 80px;
   color: #000;
@@ -101,24 +105,25 @@ body {
   text-shadow: 1px 1px 2px #000;
   font-family: 'Oswald', sans-serif;
   margin-left: 40px;
-  margin-top: 40px;
   font-size: 30px;
 }
 
 .quote2 {
-  color: #000;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
   position: relative;
   font-family: 'Oswald', sans-serif;
-  margin-left: 310px;
+  margin-right: 310px;
   margin-top: 370px;
+  margin-left: -5px;
   font-size: 30px;
-  background: #b3cece;
-  padding: 15px 5px 15px 20px;
-  border-top-left-radius: 26px;
-  border-bottom-left-radius: 26px;
+  background: #35687a;
+  padding: 15px 15px 15px 25px;
+  border-top-right-radius: 26px;
+  border-bottom-right-radius: 26px;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
-  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
   opacity: .9;
   box-shadow: 2px 2px 4px #000;
 }
@@ -130,6 +135,7 @@ body {
   box-shadow: 2px 2px 8px #000;
   margin-top: -45px;
   margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .dog-photo {
@@ -140,7 +146,7 @@ body {
   /* border: 2px solid #fff; */
   position: absolute;
   right: 30px;
-  margin-top: 360px;
+  margin-top: 400px;
   border: 2px solid #b3cece;
 }
 
@@ -150,11 +156,12 @@ body {
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 2px 2px 8px #000;
-  margin-top: -175px;
-  margin-left: 30px;
+  left: 30px;
+  margin: 10px;
+  margin-right: 20px;
   z-index: 4;
   border: 2px solid #b3cece;
-  position: absolute;
+  float: left;
 }
 
 .kendra-photo {
@@ -162,24 +169,24 @@ body {
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 2px 2px 8px #000;
-  margin-top: -215px;
   right: 20px;
-  position: absolute;
   z-index: 4;
+  margin: 10px;
   border: 2px solid #b3cece;
+  float: right;
 }
 
 .info2 {
   background-color: #b3cece;
-  padding: 20px 50px 160px 50px;
   font-family: 'Lato', sans-serif;
-  min-height: 400px;
+  min-height: 470px;
+  padding: 25px 20px;
   border-top: 20px solid #fff;
   border-bottom: 20px solid #fff;
 }
 
 .about-me {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
   z-index: 5;
   position: relative;
@@ -191,7 +198,7 @@ body {
 
 .parallax3 {
   background-image: url("/images/victor_capstone.jpg");
-  min-height: 550px;
+  min-height: 570px;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -234,17 +241,17 @@ body {
 
 #contact button {
   border-radius: 0;
-  /* border: 2px solid #1e1e1e; */
   border-radius: 2px;
-  background: #416357;
+  background: #40798C;
+  font-size: 16px;
   color: #fff;
-  width: 130px;
+  width: 140px;
   height: 40px;
 }
 
 #contact button:hover {
   box-shadow: none;
-  background: #213a31;
+  background: #1f4856;
   color: #fff;
 }
 
@@ -334,7 +341,7 @@ i.mobileMenu.fa.fa-bars {
 
 @media only screen and (max-width: 625px) {
   .parallax3 {
-    min-height: 600px;
+    min-height: 630px;
   }
   .chase-photo {
     width: 40%;
@@ -355,7 +362,7 @@ i.mobileMenu.fa.fa-bars {
     cursor: pointer;
   }
   .quote2 {
-    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 
@@ -378,6 +385,7 @@ i.mobileMenu.fa.fa-bars {
     margin-top: 20px;
   }
   .quote2 {
-    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 400px;
   }
 }

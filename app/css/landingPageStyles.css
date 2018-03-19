@@ -1,0 +1,355 @@
+body {
+  overflow-x: hidden;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.menu {
+  height: 80px;
+  background: #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.navMenu {
+  display: flex;
+  margin-right: 25px;
+}
+
+.menuItem {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 120px;
+  margin: 0px 3px;
+  margin-top: 0px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #111;
+}
+
+.menuItem:hover {
+  background: #fff;
+  box-shadow: 0 10px 6px -6px #111;
+  border-radius: 2px;
+  background: #7cb852;
+  color: #fff;
+  text-shadow: 1px 1px 1px #111;
+}
+
+.menuImage {
+  height: 170px;
+  width: 170px;
+  margin-top: 65px;
+  position: relative;
+  margin-left: 20px;
+  background: #999;
+  padding: 15px;
+  border-radius: 15%;
+  border-bottom: 1px solid #000;
+}
+
+.parallax {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/K2%2C_Mount_Godwin_Austen%2C_Chogori%2C_Savage_Mountain.jpg');
+  min-height: 420px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  border-bottom: .5px solid #d7dfed;
+}
+
+.imageHeader {
+  color: #fff;
+  font-size: 50px;
+  left: 2%;
+  position: relative;
+  text-shadow: 1px 1px 8px #000;
+  font-family: 'Oswald', sans-serif;
+}
+
+.info {
+  background-color: #d7dfed;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  padding: 30px 40px 70px 40px;
+  color: #000;
+}
+
+.parallax2 {
+  background: url('https://wallpaperscraft.com/image/mountains_night_sky_road_bends_darkness_63269_1920x1080.jpg');
+  min-height: 470px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: .5px solid #dac0e8;
+}
+
+.quote {
+  color: #fff;
+  left: 10%;
+  position: relative;
+  text-shadow: 1px 1px 2px #000;
+  font-family: 'Oswald', sans-serif;
+  margin: 10px;
+  margin-top: 40px;
+}
+
+.my-photo {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px #000;
+  margin-top: -45px;
+  margin-left: 20px;
+}
+
+.dog-photo {
+  width: 275px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px #000;
+  /* border: 2px solid #fff; */
+  position: absolute;
+  right: 30px;
+  margin-top: 320px;
+  border: 2px solid #b3cece;
+}
+
+.chase-photo {
+  width: 205px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px #000;
+  margin-top: -175px;
+  margin-left: 30px;
+  z-index: 4;
+  border: 2px solid #b3cece;
+  position: absolute;
+}
+
+.kendra-photo {
+  width: 235px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px #000;
+  margin-top: -215px;
+  right: 20px;
+  position: absolute;
+  z-index: 4;
+  border: 2px solid #b3cece;
+}
+
+.info2 {
+  background-color: #b3cece;
+  padding: 20px 50px 60px 50px;
+  font-family: 'Lato', sans-serif;
+  min-height: 400px;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+}
+
+.about-me {
+  font-size: 16px;
+  color: #000;
+  z-index: 5;
+  position: relative;
+}
+
+.about-me-header {
+  font-family: 'Oswald', sans-serif;
+}
+
+.parallax3 {
+  background-image: url("/images/victor_capstone.jpg");
+  min-height: 470px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  border-bottom: .5px solid #d7dfed;
+}
+
+.contactImage {
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #555;
+  margin-bottom: 15px;
+}
+
+#contact {
+  background-color: #e2e8de;
+  font-family: 'Dosis', sans-serif;
+  min-height: 100vh;
+}
+
+#contact .well {
+  margin-top: 15px;
+  border-radius: 0;
+  background: #45563b;
+  box-shadow: 2px 2px 6px #000;
+}
+
+.well-header {
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  font-family: 'Oswald', sans-serif;
+}
+
+#contact .form-control {
+  border-radius: 4px;
+  background: #fff;
+  padding-left: 10px;
+}
+
+#contact button {
+  border-radius: 0;
+  /* border: 2px solid #1e1e1e; */
+  border-radius: 2px;
+  background: #416357;
+  color: #fff;
+  width: 130px;
+  height: 40px;
+}
+
+#contact button:hover {
+  box-shadow: none;
+  background: #213a31;
+  color: #fff;
+}
+
+#contact .row {
+  margin-bottom: 30px;
+}
+
+.contactMessage {
+  margin-top: 20px;
+}
+
+.contactInfoBox {
+  margin: 1px auto;
+  width: 300px;
+}
+
+.contactInfo {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+
+.contactIcons {
+  margin-right: 30px;
+  margin-left: 40px;
+  color: #777;
+}
+
+i.mobileMenu.fa.fa-bars {
+  display: none;
+}
+
+.menu2 {
+  width: 0px;
+  padding-bottom: 20px;
+  margin-top: 7%;
+  border-radius: 2px;
+  padding-top: 35px;
+  padding-right: 20px;
+  box-shadow: 1px 1px 4px #000;
+  background: #d2efdb;
+  position: fixed;
+  right: -25px;
+  top: 30px;
+  border: none;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 6;
+}
+
+.menu2.is-visible {
+  height: 220px;
+  width: 75%;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  z-index: 6;
+}
+
+.closeMenu {
+  margin-right: 10%;
+  margin-top: -25px;
+  font-size: 28px;
+}
+
+.menuLinkMenu {
+  margin-top: 15px;
+  list-style: none;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.menuLink {
+  border-bottom: 1px solid #333;
+  padding: 12px 6px;
+}
+
+.menuLink:nth-child(1) {
+  border-top: 1px solid #333;
+}
+
+@media only screen and (max-width: 625px) {
+  .parallax3 {
+    min-height: 600px;
+  }
+  .chase-photo {
+    width: 40%;
+    margin-left: 7px;
+  }
+  .kendra-photo {
+    width: 40%;
+    right: 7px;
+  }
+  .navMenu {
+    display: none;
+  }
+  i.mobileMenu.fa.fa-bars {
+    display: block;
+    margin-right: 30px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #contact .well {
+    margin-bottom: 20px;
+  }
+  .info2 {
+    padding: 80px 15px 160px 15px;
+  }
+  .contactImage {
+    display: none;
+  }
+  .quote {
+    left: 0%;
+    margin: 20px;
+    margin-top: 20px;
+  }
+}

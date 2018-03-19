@@ -4,10 +4,10 @@
   align-items: center;
   flex-direction: column;
   background: #8fa2b7;
-  background: -webkit-linear-gradient(#8fa2b7, #5D737E);
-  background: -o-linear-gradient(#8fa2b7, #5D737E);
-  background: -moz-linear-gradient(#8fa2b7, #5D737E);
-  background: linear-gradient(#8fa2b7, #5D737E);
+  background: -webkit-linear-gradient(#999, #8fa2b7, #5D737E);
+  background: -o-linear-gradient(#999, #8fa2b7, #5D737E);
+  background: -moz-linear-gradient(#999, #8fa2b7, #5D737E);
+  background: linear-gradient(#999, #8fa2b7, #5D737E);
   min-width: 96%;
   min-height: 98vh;
   margin: 2%;
@@ -15,10 +15,17 @@
   box-shadow: 3px 3px 6px #111;
 }
 
+.resume-logo-menu {
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .resumeHeader {
   color: white;
-  font-family: 'Rubik', serif;
-  text-shadow: 2px 2px 4px black;
+  font-family: 'Oswald', serif;
+  text-shadow: 1px 1px 2px #333;
+  margin-top: 0px;
 }
 
 .myResume {
@@ -49,40 +56,14 @@
   box-shadow: 0px 0px 2px black;
 }
 
-/*.resumeDesign {
-  z-index: 1;
-  position: relative;
-  background: #A6D9F7;
-  background: -webkit-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
-  background: -o-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
-  background: -moz-linear-gradient(#A6D9F7, #A3A9AA, #69A297);
-  background: linear-gradient( #A6D9F7, #A3A9AA, #69A297);
-  min-height: 80vh;
-  min-width: 100vw;
-  -webkit-clip-path: polygon(100% 0, 0 35%, 0 100%, 100% 65%);
-  clip-path: polygon(100% 0, 0 34%, 0 100%, 100% 66%);
-}*/
-
 /*/////////// RESUME MENU /////////////////
 /////////////////////////////////////////*/
-
-.resumeMenuLink {
-  font-family: 'Monoton', serif;
-  font-size: 2.5em;
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  cursor: pointer;
-  margin-bottom: 0;
-  margin-left: 10px;
-}
 
 .resumeMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;
   z-index: 5;
-  top: 25px;
 }
 
 .resumeMenu:hover {
@@ -93,37 +74,31 @@
   display: none;
   position: fixed;
   opacity: 1;
+  margin-top: 1px;
   min-width: 100px;
   margin-left: 20px;
   z-index: 5;
 }
 
 .dropdown-content-resume a {
-  color: navy;
-  background: #5D737E;
-  background: -webkit-linear-gradient(right, #5D737E, #D6F8D6, #8cc2f7);
-  background: -o-linear-gradient(left, #5D737E, #D6F8D6, #8cc2f7);
-  background: -moz-linear-gradient(left, #5D737E, #D6F8D6, #8cc2f7);
-  background: linear-gradient(to left, #5D737E, #D6F8D6, #8cc2f7);
-  font-family: 'Monoton', serif;
-  padding: 12px 16px;
-  border: 2px solid black;
-  margin-top: 10px;
-  border-radius: 8%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background: #7cb852;
+  font-family: 'Oswald', serif;
+  padding: 6px 8px;
+  border: 1px solid #111;
+  margin-top: 5px;
+  border-radius: 4px;
   text-decoration: none;
   display: block;
-  box-shadow: 3px 3px 6px grey;
+  box-shadow: 1px 1px 4px #111;
+  font-size: 18px;
   cursor: pointer;
   z-index: 5;
 }
 
 .dropdown-content-resume a:hover {
-  background: #D6F8D6;
-  background: -webkit-linear-gradient(left, white, #D6F8D6, #8cc2f7);
-  background: -o-linear-gradient(right, white, #D6F8D6, #8cc2f7);
-  background: -moz-linear-gradient(right, white, #D6F8D6, #8cc2f7);
-  background: linear-gradient(to right, white, #D6F8D6, #8cc2f7);
-  font-weight: 600;
+  background: #213a31;
 }
 
 .dropdown-resume:hover .dropdown-content-resume {
@@ -131,8 +106,7 @@
 }
 
 .dropdown-resume {
-  position: fixed;
-  margin-top: 60px;
+  margin-top: 10px;
   top: 0;
   align-self: flex-start;
   z-index: 5;
@@ -145,48 +119,21 @@
   cursor: pointer;
 }
 
-/*////////// RESUME MOBILE ITEMS ///////////
-//////////////////////////////////////////*/
-
-.mobileResume {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mobileResumeHeader {
-  font-family: 'Oswald', serif;
-  color: black;
-}
-
-.mobileResumeName {
-  font-family: 'Oswald', serif;
-  color: black;
-}
-
 @media screen and (max-width: 800px) {
   .myResume {
+    width: 98%;
+    margin-top: 5px;
+  }
+  /* .resumeHeader {
     display: none;
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  .resume-logo-menu {
+    margin-top: -10px;
   }
-  .mobileResume {
-    display: flex;
-    max-width: 100%;
-    padding: 0;
-  }
-  .resumeDesign {
-    display: none;
-  }
-  .projectsResume, .experienceResume, .contactResume, .skillsResume, .educationResume {
-    width: 95%;
-    margin: 5px 0 5px 0;
-    box-shadow: 2px 2px 4px black;
-    border-radius: 6px;
-  }
-  .resumeMenuLink {
-    color: black;
-    text-shadow: none;
-  }
-  .resumeHeader {
-    display: none;
+  .resumeHamburger {
+    margin-top: -10px;
   }
 }

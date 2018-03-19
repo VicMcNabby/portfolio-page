@@ -1,4 +1,4 @@
-<main class="backgroundLanding" id="home">
+<!-- <main class="backgroundLanding" id="home">
   <div class="titleBox container">
     <div class="backgroundImage"></div>
     <img src="images/MVLogo.png" class="MVLogo" />
@@ -22,13 +22,13 @@
       </p>
     </div>
   </div>
-</main>
+</main> -->
 <!-- ////////////////////////////////////////////
 ///////////// ABOUT PAGE //////////////////// -->
 
-<main class="aboutInfo" id="about">
+<!-- <main class="aboutInfo" id="about">
   <div class="aboutBox container">
-    <!-- ///////// About Page Menu /////////// -->
+
     <div class="aboutPageDropdown">
       <div class="about-page-menu">
         <p class="aboutPageLink">
@@ -42,9 +42,9 @@
         <a ui-sref="portfolio">Portfolio</a>
         <a href="#contact" du-smooth-scroll>Contact</a>
       </div>
-    </div>
-    <!-- /////////// Photo and Description //////////// -->
-    <img class="myPhoto" src="images/Matthew Victor.jpg" />
+    </div> -->
+<!-- /////////// Photo and Description //////////// -->
+<!-- <img class="myPhoto" src="images/Matthew Victor.jpg" />
     <div class="aboutDescriptionBox">
       <h3 class="aboutDescriptionHeader">About  Me...</h3>
       <p class="aboutDescription">
@@ -60,13 +60,13 @@
   </div>
   <div class="coolDesign">
   </div>
-</main>
+</main> -->
 
 <!-- ////////////////////////////////////////////
 ///////////// CONTACT PAGE //////////////////// -->
 
-<main class="contactInfo" id="contact">
-  <!-- ////////// Contact Menu /////////////// -->
+<!-- <main class="contactInfo" id="contact">
+
   <div class="contactMenuBox container col-xs-2">
     <div class="contactPageDropdown">
       <div class="about-page-menu">
@@ -83,9 +83,9 @@
       </div>
     </div>
     <h3 class="contactTitleMobile">CONTACT</h3>
-  </div>
-  <!-- //////////////// Contact Form ////////////// -->
-  <div class="contactFormBox container col-xs-9">
+  </div> -->
+<!-- //////////////// Contact Form ////////////// -->
+<!-- <div class="contactFormBox container col-xs-9">
     <form class="contactInformation col-sm-8 col-xs-12" action="//www.enformed.io/cu7at6up" method="post">
       <div class="contactTopForm">
         <div class="form-group">
@@ -106,10 +106,10 @@
         </div>
         <button type="submit" ng-click="$ctrl.sentEmail()" class="submitContactInfo btn btn-primary">Submit</button>
       </div>
-    </form>
+    </form> -->
 
-    <!-- //////// My contact information ///////// -->
-    <div class="myContactInfo col-sm-5 col-xs-12">
+<!-- //////// My contact information ///////// -->
+<!-- <div class="myContactInfo col-sm-5 col-xs-12">
       <h6 class="myContactData">
       <i class="contactIcons fa fa-envelope" aria-hidden="true"></i>  vicmcnabby@gmail.com
       </h6>
@@ -130,4 +130,109 @@
   <div class="contactTitleBox col-xs-1">
     <h3 class="contactPageTitle">CONTACT</h3>
   </div>
-</main>
+</main> -->
+
+
+
+
+
+<div class="menu">
+  <img class="menuImage" src="images/MVLogo.png" />
+  <div class="navMenu">
+    <p class="menuItem" href="#contact" du-smooth-scroll>
+      CONTACT
+    </p>
+    <p class="menuItem" ui-sref="portfolio">
+      PORTFOLIO
+    </p>
+    <p class="menuItem" ui-sref="resume">
+      RESUMÉ
+    </p>
+  </div>
+  <i class="mobileMenu fa fa-bars" aria-hidden="true" ng-click="visible=!visible;"></i>
+  <div ng-class="{'is-visible':visible}" class="menu2">
+    <button type="button" class="close closeMenu" ng-click="visible=!visible;">x</button>
+    <ul class="menuLinkMenu">
+      <li class="menuLink" ui-sref="portfolio">PORTFOLIO</li>
+      <li class="menuLink" ng-click="visible=!visible;" href="#contact" du-smooth-scroll>CONTACT</li>
+      <li class="menuLink" ui-sref="resume">RESUMÉ</li>
+    </ul>
+  </div>
+</div>
+<div class="parallax">
+  <h1 class="imageHeader">Matthew Victor</br>Full-Stack Web Developer</h1>
+</div>
+<div class="info">
+  Since I was a kid, I've always enjoyed solving logic problems and finding various outlets for my creativity. As an adult, however, I had trouble finding ways to fulfill these passions. I was then introduced to the wonderful world of web development and
+  everything was right again. I am now a full-stack developer with an eye for design. I look forward to what the future holds for me in this ever changing technological landscape.
+</div>
+<div class="parallax2">
+  <img class="my-photo" src="/images/Matthew Victor.jpg" />
+  <img class="dog-photo" src="/images/happydogs.png" />
+  <h4 class="quote">
+    <i>"I look forward to what the future holds for me in this ever changing technological landscape."</i>
+  </h4>
+</div>
+<div class="info2">
+  <h2 class="about-me-header">About Me</h2>
+  <p class="about-me">
+    I am a highly motivated and passionate full stack developer, using my creativity to transform ideas into beautiful, usable websites and applications. I treat everyday as an opportunity to learn something new, in order to add to my ever expanding tool
+    belt of languages and frameworks. My family, a 1.5 year old son named Chase, my beautiful, loving partner Kendra, and two great dogs, inspire and drive me each and everyday.
+  </p>
+</div>
+<div class="parallax3">
+  <img class="chase-photo" src="/images/Chase2.jpeg" />
+  <img class="kendra-photo" src="/images/Kendra.jpeg" />
+</div>
+<section id="contact">
+  <div class="container">
+    <div class="well well-sm">
+      <h3 class="well-header"><strong>Contact</strong></h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="contactInfoBox">
+          <img class="contactImage" src="images/vic_cap2.jpg" />
+          <p class="contactInfo">
+            <i class="contactIcons fa fa-phone" aria-hidden="true"></i> 703.517.3476
+          </p>
+          <p class="contactInfo">
+            <i class="contactIcons fa fa-envelope" aria-hidden="true"></i> vicmcnabby@gmail.com
+          </p>
+          <p class="contactInfo">
+            <i class="contactIcons fa fa-linkedin" aria-hidden="true"></i> /in/matthew-victor
+          </p>
+          <p class="contactInfo">
+            <i class="contactIcons fa fa-github" aria-hidden="true"></i> /VicMcNabby
+          </p>
+          <p class="contactInfo">
+            <i class="contactIcons fa fa-map-marker" aria-hidden="true"></i> Denver, Colorado
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <h4 class="contactMessage"><strong>Get in Touch</strong></h4>
+        <form action="//www.enformed.io/cu7at6up" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" value="" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" value="" placeholder="E-mail" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" name="phone" value="" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
+            <input type="hidden" name="*redirect" value="http://matthewvictor.io/home" />
+          </div>
+          <button class="btn btn-default" type="submit" name="button">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

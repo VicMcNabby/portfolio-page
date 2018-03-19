@@ -25,6 +25,8 @@
 .portfolioMenu {
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 0px;
   align-items: center;
   position: fixed;
   z-index: 5;
@@ -32,7 +34,7 @@
 }
 
 .portfolioMenu:hover {
-  text-shadow: -0px -0px 0 white, 0px -0px 0 white, -0px 1px 0 red;
+  text-shadow: -0px -0px 0 #fff, 0px -0px 0 #fff, -0px 1px 0 #fff;
 }
 
 .glyphicon-menu-hamburger {
@@ -56,34 +58,29 @@
   min-width: 100px;
   margin-left: 20px;
   z-index: 5;
+  margin-top: 0px;
 }
 
 .dropdown-content a {
-  color: navy;
+  color: #fff;
   background: #8cc2f7;
-  background: -webkit-linear-gradient(right, white, white, #8cc2f7);
-  background: -o-linear-gradient(left, white, white, #8cc2f7);
-  background: -moz-linear-gradient(left, white, white, #8cc2f7);
-  background: linear-gradient(to left, white, white, #8cc2f7);
-  font-family: 'Monoton', serif;
-  padding: 12px 16px;
-  border: 2px solid black;
-  margin-top: 10px;
+  font-family: 'Oswald', serif;
+  padding: 6px 8px;
+  border: 1px solid black;
+  margin-top: 5px;
   border-radius: 8%;
   text-decoration: none;
   display: block;
-  box-shadow: 3px 3px 6px grey;
+  box-shadow: 1px 1px 4px #111;
   cursor: pointer;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000;
   z-index: 5;
 }
 
 .dropdown-content a:hover {
-  background: #f7e1e1;
-  background: -webkit-linear-gradient(left, white, #f7e1e1, #8cc2f7);
-  background: -o-linear-gradient(right, white, #f7e1e1, #8cc2f7);
-  background: -moz-linear-gradient(right, white, #f7e1e1, #8cc2f7);
-  background: linear-gradient(to right, white, #f7e1e1, #8cc2f7);
-  font-weight: 600;
+  background: #094249;
+  border: 1px solid #fff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -104,11 +101,6 @@
   color: white;
   cursor: pointer;
   margin-bottom: 0;
-}
-
-.bracketLink {
-  font-family: 'Animo', serif;
-  color: white;
 }
 
 /*///////////////////////////////////////////

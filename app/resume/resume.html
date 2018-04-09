@@ -1,30 +1,25 @@
-<div class="resumePage">
-  <!-- //////// RESUME MENU ///////// -->
-  <div class="dropdown-resume">
-    <div class="resumeMenu">
-      <img class="resume-logo-menu" src="/images/MVLogo.png" />
-      <span class="resumeHamburger glyphicon glyphicon-menu-hamburger"></span>
-    </div>
-    <div class="dropdown-content-resume">
-      <a ui-sref="home">Home</a>
-      <a ui-sref="portfolio">Portfolio</a>
-    </div>
+<div class="menu">
+  <img class="menuImage" src="images/MVLogo.png" ui-sref="home" />
+  <div class="navMenu">
+    <p class="menuItem" ui-sref="home">
+      HOME
+    </p>
+    <p class="menuItem" ui-sref="portfolio">
+      PORTFOLIO
+    </p>
   </div>
-  <!-- ////////// RESUME MAIN /////////// -->
-  <a class="printResume" href="https://talent.galvanize.com/attachments/store/adc67cdaffa418719cc570ddec71ddfcd93395176265529d9728ad228e36/MVResume.pdf" target="_blank">printable resume</a>
-  <h2 class="resumeHeader">RESUMÉ</h2>
-  <img class="myResume" src="images/resume.png" />
-  <!-- <div class="resumeDesign">
+  <i class="mobileMenu fa fa-bars" aria-hidden="true" ng-click="visible=!visible;"></i>
+  <div ng-class="{'is-visible':visible}" class="menu2">
+    <button type="button" class="close closeMenu" ng-click="visible=!visible;">x</button>
+    <ul class="menuLinkMenu">
+      <li class="menuLink" ui-sref="portfolio">PORTFOLIO</li>
+      <li class="menuLink" ui-sref="home">HOME</li>
+    </ul>
+  </div>
+</div>
 
-  </div> -->
-  <!-- ////////// MOBILE ITEMS ///////////// -->
-  <!-- <div class="mobileResume container">
-    <h4 class="mobileResumeName">Matthew Victor</h4>
-    <h5 class="mobileResumeHeader">Resumé</h5>
-    <img class="projectsResume" src="images/projects.png" />
-    <img class="experienceResume" src="images/experience.png" />
-    <img class="contactResume" src="images/contact.png" />
-    <img class="skillsResume" src="images/skills.png" />
-    <img class="educationResume" src="images/education.png" />
-  </div> -->
+<div class="resumePage">
+  <a class="printResume" href="https://talent.galvanize.com/attachments/store/9d04ca5fe022087e0f851475e5991178879e22b8b9d32e1d4ce89d9e8511/MVictorResume.pdf" target="_blank">printable resume</a>
+  <a class="linkedInButton" href="https://www.linkedin.com/in/matthew-victor/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+  <img class="myResume" src="images/resume.png" />
 </div>

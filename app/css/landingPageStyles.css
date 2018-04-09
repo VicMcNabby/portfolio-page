@@ -6,13 +6,9 @@ body {
   overflow-x: hidden;
 }
 
-/* * {
-  border: 1px solid red;
-} */
-
 .menu {
   height: 100px;
-  background: #999;
+  background: #63705d;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,13 +55,14 @@ body {
   padding: 15px;
   border-radius: 15%;
   border-bottom: 1px solid #000;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .parallax {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/K2%2C_Mount_Godwin_Austen%2C_Chogori%2C_Savage_Mountain.jpg');
+  background-image: url('https://images.pexels.com/photos/34088/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350');
   min-height: 500px;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
@@ -90,10 +87,10 @@ body {
 }
 
 .parallax2 {
-  background: url('https://wallpaperscraft.com/image/mountains_night_sky_road_bends_darkness_63269_1920x1080.jpg');
+  background: url('https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   min-height: 500px;
   background-attachment: fixed;
-  background-position: right;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: .5px solid #dac0e8;
@@ -143,11 +140,10 @@ body {
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 2px 2px 8px #000;
-  /* border: 2px solid #fff; */
   position: absolute;
   right: 30px;
   margin-top: 400px;
-  border: 2px solid #b3cece;
+  border: 2px solid #63705d;
 }
 
 .chase-photo {
@@ -160,7 +156,7 @@ body {
   margin: 10px;
   margin-right: 20px;
   z-index: 4;
-  border: 2px solid #b3cece;
+  border: 2px solid #63705d;
   float: left;
 }
 
@@ -172,28 +168,29 @@ body {
   right: 20px;
   z-index: 4;
   margin: 10px;
-  border: 2px solid #b3cece;
+  border: 2px solid #63705d;
   float: right;
 }
 
 .info2 {
-  background-color: #b3cece;
+  background-color: #63705d;
   font-family: 'Lato', sans-serif;
   min-height: 470px;
   padding: 25px 20px;
-  border-top: 20px solid #fff;
-  border-bottom: 20px solid #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
 }
 
 .about-me {
   font-size: 18px;
-  color: #000;
+  color: #fff;
   z-index: 5;
   position: relative;
 }
 
 .about-me-header {
   font-family: 'Oswald', sans-serif;
+  color: #fff;
 }
 
 .parallax3 {
@@ -360,6 +357,7 @@ i.mobileMenu.fa.fa-bars {
     margin-right: 30px;
     font-size: 28px;
     cursor: pointer;
+    color: #fff;
   }
   .quote2 {
     margin-right: 100px;
